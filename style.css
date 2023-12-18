@@ -1,0 +1,338 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+body.showCart .cartTab {
+    inset: 0 0 0 auto;
+}
+
+.h1_text {
+    font-size: 25px;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    margin: 30px 0 60px 0;
+}
+
+.h1_text:hover {
+    text-shadow: -15px 15px 15px rgba(0, 0, 0.2),
+        15px -15px 15px rgba(255, 255, 255, 0.2);
+    filter: drop-shadow(0 15px 15px rgb(22, 22, 255));
+}
+
+.btn {
+    width: 200px;
+    height: 42px;
+    border-radius: 5px;
+    background: blue;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: rgb(22, 22, 255);
+    transform: scale(1.05);
+    transition: .5s ease;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.btn:active {
+    color: #f5f5f5;
+    background-color: rgb(51, 51, 255);
+    transform: scale(1);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0.622);
+}
+
+form {
+    display: flex;
+    gap: 15px;
+}
+
+.label {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.label:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+    font-size: 20px;
+    text-shadow: 5px 5px 0 rgb(51, 51, 255);
+}
+
+.input {
+    display: flex;
+    border-radius: 5px;
+    width: 200px;
+    height: 40px;
+    border: 2px solid rgb(215, 215, 215);
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+}
+
+.input:hover {
+    width: 250px;
+    height: 35px;
+    transform: scale(1.05);
+    transition: .5s ease;
+    font-size: 20px;
+    border: 2px solid rgb(51, 51, 255);
+    box-shadow: 5px 5px 0 rgb(51, 51, 255);
+}
+
+.inner_form_btn {
+    all: unset;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    border: none;
+    cursor: pointer;
+    margin-top: 62px;
+}
+
+.inner_form_btn:hover {
+    color: #000;
+    background-color: rgb(22, 22, 255);
+    transform: scale(1.05);
+    transition: .5s ease;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.inner_form_btn:active {
+    color: #f5f5f5;
+    background-color: rgb(51, 51, 255);
+    transform: scale(1);
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0.622);
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.container2 .blocks {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.blocks .filter_blocks {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter_blocks {
+    width: 170px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 80px;
+    border: 2px solid rgb(215, 215, 215);
+    padding: 15px 0 0 15px;
+    transition: .5s ease;
+}
+
+.filter_blocks:hover {
+    transform: scale(1.05);
+    box-shadow: -15px 15px 15px rgba(0, 0, 0.2),
+        15px -15px 15px rgba(255, 255, 255, 0.2);
+    filter: drop-shadow(0 15px 15px blue);
+}
+
+.title {
+    color: #000;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.title:hover {
+    color: blue;
+}
+
+.price {
+    color: blue;
+    font-weight: 700;
+    font-style: normal;
+    padding-top: 12px;
+}
+
+.price:hover {
+    color: #8b8b8b;
+}
+
+.cartTab {
+    width: 355px;
+    background-color: #000;
+    color: #eee;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -355px 0 auto;
+    transition: .5s ease;
+}
+
+.cartTab .btn2 {
+    width: 250px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 5px;
+    margin-top: 20px;
+}
+
+.cartTab .btn2 button {
+    background-color: blue;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    width: 280px;
+    height: 40px;
+    margin-left: 35px;
+    border-radius: 5px;
+}
+
+.cartTab .btn2 .close {
+    background-color: #000;
+    border: 1px solid #fff;
+    color: #fff;
+    margin-top: 5px;
+}
+
+.checkOut:hover {
+    color: #000;
+    background-color: rgb(22, 22, 255);
+    transform: scale(1.05);
+    transition: .5s ease;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.checkOut:active {
+    color: #f5f5f5;
+    background-color: rgb(51, 51, 255);
+    transform: scale(1);
+    box-shadow: 0 3px 8px rgb(0, 0, 255);
+}
+
+.close:hover {
+    color: #000;
+    background-color: rgb(22, 22, 255);
+    transform: scale(1.05);
+    transition: .5s ease;
+    box-shadow: 5px 5px 0px #ff5252;
+}
+
+.close:active {
+    color: #f5f5f5;
+    background-color: rgb(51, 51, 255);
+    transform: scale(1);
+    box-shadow: 0 3px 8px rgb(0, 0, 255);
+}
+
+.forms_inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.label_second {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 40px 0 5px 42px;
+}
+
+.label_second:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+    font-size: 20px;
+    text-shadow: 5px 5px 0 rgba(51, 51, 255);
+}
+
+.input_second {
+    border-radius: 5px;
+    width: 270px;
+    height: 40px;
+    border: 2px solid rgb(215, 215, 215);
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    margin-left: 42px;
+}
+
+.input_second:hover {
+    width: 250px;
+    height: 35px;
+    transform: scale(1.05);
+    transition: .5s ease;
+    font-size: 20px;
+    border: 2px solid rgb(51, 51, 255);
+    box-shadow: 5px 5px 0 rgba(51, 51, 255);
+}
+
+.label_third {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 5px 42px;
+}
+
+.label_third:hover {
+    transform: scale(1.05);
+    transition: .5s ease;
+    font-size: 20px;
+    text-shadow: 5px 5px 0 rgba(51, 51, 255);
+}
+
+.input_third {
+    border-radius: 5px;
+    width: 270px;
+    height: 40px;
+    border: 2px solid rgb(215, 215, 215);
+    padding-left: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    margin-left: 42px;
+}
+
+.input_third:hover {
+    width: 250px;
+    height: 35px;
+    transform: scale(1.05);
+    transition: .5s ease;
+    font-size: 20px;
+    border: 2px solid rgb(51, 51, 255);
+    box-shadow: 5px 5px 0 rgb(51, 51, 255);
+}
